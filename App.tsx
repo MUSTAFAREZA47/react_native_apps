@@ -5,6 +5,7 @@ import Card from './components/Card';
 import ElevatedCards from './components/ElevatedCards';
 import FancyCard from './components/FancyCard';
 import ActionCard from './components/ActionCard';
+import ContactList from './components/ContactList';
 
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
           <FancyCard />
           <Text style={styles.headingText}>Blog Card</Text>
           <ActionCard />
+          <Text style={styles.headingText}>Contact List</Text>
+          <ContactList />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
