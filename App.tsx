@@ -4,6 +4,7 @@ import React from 'react'
 import Card from './components/Card';
 import ElevatedCards from './components/ElevatedCards';
 import FancyCard from './components/FancyCard';
+import ActionCard from './components/ActionCard';
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
           <ElevatedCards />
           <Text style={styles.headingText}>Fancy Card</Text>
           <FancyCard />
+          <Text style={styles.headingText}>Blog Card</Text>
+          <ActionCard />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
