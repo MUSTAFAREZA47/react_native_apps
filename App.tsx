@@ -1,15 +1,21 @@
-import { View, Text, SafeAreaView, ScrollView, StyleSheet } from 'react-native'
+import { View, Text, ScrollView, StyleSheet } from 'react-native'
+import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import React from 'react'
 import Card from './components/Card';
+import ElevatedCards from './components/ElevatedCards';
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.background}>
-      <ScrollView>
-        <Text style={styles.headingText}>Main Card</Text>
-        <Card />
-      </ScrollView>
-    </SafeAreaView>
+    <SafeAreaProvider>
+      <SafeAreaView style={styles.background}>
+        <ScrollView>
+          <Text style={styles.headingText}>Flat Card</Text>
+          <Card />
+          <Text style={styles.headingText}>Elevated Card</Text>
+          <ElevatedCards />
+        </ScrollView>
+      </SafeAreaView>
+    </SafeAreaProvider>
   );
 }
 
