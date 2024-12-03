@@ -1,12 +1,12 @@
-import { View, Text, SafeAreaView, ScrollView } from 'react-native'
+import { View, Text, SafeAreaView, ScrollView, StyleSheet } from 'react-native'
 import React from 'react'
 import Card from './components/Card';
 
 const App = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.background}>
       <ScrollView>
-        <Text>App</Text>
+        <Text style={styles.headingText}>Main Card</Text>
         <Card />
       </ScrollView>
     </SafeAreaView>
@@ -14,3 +14,14 @@ const App = () => {
 }
 
 export default App
+
+const styles = StyleSheet.create({
+  background: {
+    backgroundColor: '#ffffff',
+  },
+  headingText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    margin: 8,
+  },
+});
