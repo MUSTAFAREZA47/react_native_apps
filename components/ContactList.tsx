@@ -70,7 +70,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     margin: 10,
     backgroundColor: 'lightgreen',
-    padding: 10
+    padding: 10,
+    borderRadius: 40
   },
   image: {
     height: 60,
