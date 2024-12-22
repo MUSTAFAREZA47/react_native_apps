@@ -6,6 +6,7 @@ import ElevatedCards from './components/ElevatedCards';
 import FancyCard from './components/FancyCard';
 import ActionCard from './components/ActionCard';
 import ContactList from './components/ContactList';
+import BackgroundChange from './components/BackgroundChange';
 
 const App = () => {
   return (
@@ -22,6 +23,8 @@ const App = () => {
           <ActionCard />
           <Text style={styles.headingText}>Contact List</Text>
           <ContactList />
+          <Text style={styles.headingText}>Background Change</Text>
+          <BackgroundChange />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
